@@ -1,11 +1,11 @@
 #!/usr/bin/env python3.10
+import asyncio
 import logging
 import sys
-import asyncio
-from typing import List
 from datetime import datetime
+from typing import List
 
-from aiohttp import web, WSMsgType
+from aiohttp import WSMsgType, web
 
 from backend import schemas
 

@@ -15,7 +15,7 @@ socket.addEventListener("message", ({ data }) => {
   switch (message.type) {
     case "hello":
       let container = document.getElementById("container");
-      container.innerHTML = message.content; 
+      container.innerHTML = message.content;
       break;
   }
 });
