@@ -1,0 +1,15 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile.backend.dev
+    command: python -m aiohttp.web -H "0.0.0.0" -P 3000 backend.main:init_app
+    ports:
+      - "3000:3000"
+  frontend:
+    image: nginx
+    volumes:
+      - "../frontend:/usr/share/nginx/html:ro"
+    ports:
+      - "8080:80"
