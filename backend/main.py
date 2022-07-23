@@ -26,10 +26,10 @@ async def websocket_handler(request):
             message = schemas.BaseMessage.parse_raw(msg.data)
             logger.debug(f"Received message: {message.dict()}")
         elif msg.type == WSMsgType.ERROR:
-            logger.error(f'ws connection closed with exception {ws.exception()}')
+            logger.error(f"ws connection closed with exception {ws.exception()}")
 
     websockets.remove(ws)
-    logger.debug('websocket connection closed')
+    logger.debug("websocket connection closed")
 
     return ws
 
