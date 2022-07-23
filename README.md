@@ -4,11 +4,18 @@ This repository contains Dreamy Dragons team project for Python Discord Code Jam
 
 ## Development
 
-### How to run using docker-compose
+### How to run using docker-compose:
 
+#### Linux:
 ```bash
 cd bin
 ./devstack up
+```
+
+### Windows:
+```bat
+cd bin
+./devstack.bat up
 ```
 
 Then open http://localhost:8080 in browser.
