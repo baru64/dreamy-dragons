@@ -1,12 +1,24 @@
 body {
   background-color: #FFDD56;
-}
-h1 {
-  color: #0047CC;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 7.5vw;
-  margin: 10px;
+  color: #0047CC;
 }
+h1,h2,h3 {
+   margin: 5px;
+}
+
+h1 {
+  font-size: 7.5vw;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+h3 {
+  font-size: 2.5vw;
+}
+
 p {
   color: #0047CC;
 }
@@ -34,7 +46,7 @@ button:active {
   transform: translateY(1.5vw);
 }
 .question {
-  
+
 }
 .central-text {
   display: flex;
@@ -42,7 +54,7 @@ button:active {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .answers {
@@ -59,5 +71,69 @@ margin: 25px;
   align-items: center;
   /* it center the item vertically */
   justify-content: center;
+  text-align: center;
   /* it center the item horizontally */
+}
+.lobby {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 3fr 1fr;
+}
+
+.player {
+  display: flex;
+}
+
+.player-list {
+  list-style-type: none;
+  font-size: 2vw;
+  color: #0047CC;
+  display: inline-block;
+  background-color: #FFE896;
+  padding: 10px;
+  padding-bottom: 40px;
+  width: 85%;
+  margin: 10px;
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.start-button {
+width: 40vw;
+height: 15vw;
+}
+
+.user {
+  font-weight: bold;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  font-size: 3vw;
+  background-color: #4B78CC;
+  color: #FFFFFF;
+}
+
+.form-text  {
+  font-size: 4vw;
+}
+
+.join-button {
+  margin-bottom: 50px;
+}
+
+.lobby-buttons {
+  width: 40vw;
+  height: 40vh;
+  margin-top: 15vh;
 }
