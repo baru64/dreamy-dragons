@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: #FFDD56;
+    --clr-secondary: #0047CC;
+    --clr-light-gray: #999;
+    --clr-btn-hover: #2d5fbc;
+    --clr-btn-active: #2660CC;
+
+    --fs-100: 5rem;
+    --fs-300: 3rem;
+    --fs-400: 1.5rem;
+    --fs-500: 1rem;
+    --fs-700: .75rem;
+    --fs-900: .5rem;
+
+    --fw-normal: 500;
+    --fw-thin: 300;
+    --fw-bold: 900;
+}
+
+html {
+    color: var(--clr-secondary);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--clr-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: var(--fw-bold);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 3em;
+}
+
+button {
+    padding: 2em 5em;
+    border: none;
+    background-color: var(--clr-secondary);
+    color: white;
+    font-weight: var(--fw-bold);
+    width: 100%;
+    border-radius: 1em;
+    /* height: 100px */
+    /* To change */
+    ;
+    white-space: nowrap;
+    font-size: var(--fs-400);
+    box-shadow: 0 1.5vw var(--clr-light-gray);
+}
+
+button:hover {
+    background-color: var(--clr-btn-hover);
+}
+
+button:active {
+    background-color: var(--clr-btn-active);
+    transform: translateY(5px);
+}
