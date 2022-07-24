@@ -5,4 +5,4 @@ class BaseMessage(BaseModel):
     """BaseMessage schema"""
 
     type: str
-    content: str
+    content: dict
