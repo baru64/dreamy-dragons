@@ -4,24 +4,27 @@ This repository contains Dreamy Dragons team project for Python Discord Code Jam
 
 ## Development
 
-### How to run using docker-compose:
+### How to run using docker-compose
 
-#### Linux:
+#### Linux
+
 ```bash
 cd bin
 ./devstack up
 ```
 
-### Windows:
+#### Windows
+
 ```bat
 cd bin
 ./devstack.bat up
 ```
 
-Then open http://localhost:8080 in browser.
+Then open <http://localhost:8080> in browser.
 
 ### How to run without docker
 
+#### Linux
 
 ```bash
 # first terminal
@@ -33,4 +36,11 @@ poetry shell # to activate virtualenv
 python -m aiohttp.web -H localhost -P 3000 backend.main:init_app
 ```
 
-Then open http://localhost:8000 in browser.
+Then open <http://localhost:8080> in browser.
+
+#### Windows
+
+```bat
+cd bin
+./run.bat
+```
