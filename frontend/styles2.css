@@ -40,7 +40,13 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: var(--fs-100);
+    font-weight: var(--fw-bold);
+    /* line-height: 1.25; */
+}
+
+h2 {
+    font-size: var(--fs-300);
     font-weight: var(--fw-bold);
 }
 
@@ -127,4 +133,15 @@ label {
 
 ul {
     list-style: none;
+}
+
+.lobby-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.lobby-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
