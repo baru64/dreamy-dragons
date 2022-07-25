@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Join Lobby</title>
-  </head>
-  <body>
-    <div id="container">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles2.css">
+  <title>Join Lobby</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Drunk Pyrate</h1>
+    <form>
+      <ul>
+        <li class="form-row">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username-input"/>
+        </li>
+        <li class="form-row">
+          <label for="room">Room id</label>
+          <input type="text" name="room" id="room-input"/>
+        </li>
+        <li class="form-row">
+          <button type="submit">Join</button>
+        </li>
+      </ul>
+    </form>
+  </div>
 
-    <h1 class="center">Drunk Pyrate</h1>
-
-    <p class="form-text">
-    Username:
-    <input type="text" id="username-input"/>
-    </p>
-    <p class="form-text">
-    Room id:
-    <input type="text" id="room-input"/>
-    </p>
-    <div class="center join-button">
-    <button type="submit">Join</button>
-    </div>
-    </div>
-
-  </body>
+</body>
 </html>

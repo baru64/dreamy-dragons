@@ -51,6 +51,7 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 2em;
 }
 
 .buttons-container {
@@ -77,6 +78,7 @@ button {
     border: none;
     border-radius: 1em;
     box-shadow: 0 1.5vw var(--clr-light-gray);
+    min-width: 250px;
 }
 
 button:hover {
@@ -86,4 +88,43 @@ button:hover {
 button:active {
     background-color: var(--clr-btn-active);
     transform: translateY(5px);
+}
+
+form {
+    width: 100%;
+}
+
+form>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-row>label {
+    flex: 1;
+    /* text-align: end; */
+    padding: .25em;
+}
+
+.form-row>input {
+    font: inherit;
+    font-weight: bold;
+    flex: 1;
+    padding: 1em;
+}
+
+label {
+    font-size: var(--fs-400);
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
 }
