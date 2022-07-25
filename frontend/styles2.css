@@ -55,24 +55,27 @@ h1 {
 
 .buttons-container {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 1fr;
-    gap: 3em;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
+}
+
+@media (max-width: 50em) {
+    .buttons-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 
 button {
-    padding: 2em 5em;
-    border: none;
-    background-color: var(--clr-secondary);
-    color: white;
     font-weight: var(--fw-bold);
-    width: 100%;
-    border-radius: 1em;
-    /* height: 100px */
-    /* To change */
-    ;
-    white-space: nowrap;
     font-size: var(--fs-400);
+    white-space: nowrap;
+    color: white;
+    background-color: var(--clr-secondary);
+    padding: 2em 2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 1em;
     box-shadow: 0 1.5vw var(--clr-light-gray);
 }
 
