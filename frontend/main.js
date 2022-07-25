@@ -19,5 +19,6 @@ socket.addEventListener("close", () => {
 // receive a message from the server
 socket.addEventListener("message", ({ data }) => {
   const message = JSON.parse(data);
+  console.log(message);
   game.view.receive(message);
 });

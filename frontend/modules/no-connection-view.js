@@ -4,7 +4,10 @@ class NoConnectionView {
   }
 
   draw() {
-    this.game.container.textContent = "No connection. Reload this page to reconnect.";
+    this.game.container.textContent = "";
+    let p = document.createElement('p');
+    p.textContent = "No connection. Reload this page to reconnect.";
+    this.game.container.appendChild(p);
   }
 
   receive(message) {

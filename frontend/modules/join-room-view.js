@@ -21,8 +21,7 @@ class JoinRoomView {
     button.textContent = "join";
     button.addEventListener(
       "click",
-      function () {
-        console.log(this);
+      () => {
         this.join();
       },
       false
